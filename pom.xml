@@ -11,7 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>devops-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>devops-demo</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
@@ -51,4 +51,14 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+		<finalName>devops-demo</finalName>
+	</build>
 </project>
